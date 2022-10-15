@@ -8,3 +8,8 @@ We talked about user stories, funtion requirements, and non-functional requireme
 Steven, Christian, Jagz, Gil
 Meeting lasted 90 minutes
 Discussed timeline for project. Completed remaing work on abstract, team introduction, cost estimation and slides. Brainstormed for presentation on 9/14/22.
+
+### 2022-10-15 at 10:00 Am
+Steven, Jagz, Gil
+Meeting lasted 30 minutes
+Completed work on traceability matrix. Created a workflow chart to have application completed within 8 weeks.
