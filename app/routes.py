@@ -14,6 +14,9 @@ from app.models import User
 import requests
 
 
+
+
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     return ('Lorem ipsum dolor sit amet')
@@ -36,3 +39,22 @@ def login():
         login_user(user, remember=form.remember_me.data)
         return redirect(url_for('login'))
     return render_template('login.html', title='Sign In', form=form)
+
+@app.route('/home', methods =['GET','POST'])
+def home():
+    return render_template('home.html')
+
+
+
+
+#Custom Error Pages
+
+# Invalid URL
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template("404.html"), 404
+
+# Internal Server Error
+@app.errorhandler(500)
+def page_not_found(e):
+    return render_template("500.html"), 500

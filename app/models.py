@@ -1,7 +1,8 @@
+from flask_wtf import FlaskForm
 from sqlalchemy import Column, ForeignKey, false
 from app import db
 from datetime import datetime
-from flask_login import UserMixin
+from flask_login import UserMixin, login_user, logout_user, login_manager, login_required, current_user
 from app import login
 from werkzeug.security import generate_password_hash, check_password_hash
 import json
@@ -28,6 +29,8 @@ class User(UserMixin, db.Model):
 
     def __repr__(self):
         return '<User {}>'.format(self.username)
+
+
 
 
 @login.user_loader
