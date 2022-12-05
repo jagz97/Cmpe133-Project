@@ -27,7 +27,7 @@ $ pip install -r requirements.txt
 ```
     
 
-### How to Run
+### How to Run Backend Server
 - Navigate to the project directory. 
 - Type this command into your terminal:
 ``` 
