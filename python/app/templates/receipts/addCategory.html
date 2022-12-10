@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+{% extends "base.html" %}
+{% block content %}
+
+{% include "_messages.html" %}
+<div class ="container">
+    <div class ="row">
+        <h1 class = "text-center mt-5"> Add a category to manage your receipts!</h1>
+        <div class="col-md-1"></div>
+            <form action ="" method ="POST">
+                <input type = "text" name = "category" class = "form-control">
+                <input type = "submit" value = "Add Category" class = "btn btn-info mt-2">
+            </form>
+        <div class="col-md-9"></div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Account Name</th>
+        <th scope="col">Balance</th>
+        <th scope="col">Account Type</th>
+
+
+
+      </tr>
+    </thead>
+
+    <tbody>
+
+
+      <tr>
+        <td>{{data.accounts[0].official_name}}</td>
+
+        <td>{{data.accounts[0].balances.available}}</td>
+
+        <td>{{data.accounts[0].subtype}}</td>
+
+
+
+
+
+      </tr>
+    </tbody>
+
+  </table>
+
+    <button type="button" class="btn btn-dark">
+    <a href="http://localhost:3000/">Link Another Account</a>
+    </button>
+
+
+

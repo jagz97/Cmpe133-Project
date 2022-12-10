@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Receipt Page</title>
+{% extends "base.html" %}
+{% block content %}
+
+
+        </tr>
+<div class="container">
+<table class ="table table-sm">
+    <table class="table table-sm table-bordered">
+    <thead>
+        <th>Receipt</th>
+        <th>Price</th>
+        <th>Merchant</th>
+        <th>Category</th>
+        <th>Date of Purchase</th>
+        <th>Return Date</th>
+        <th>Number of Items</th>
+        <th>Description</th>
+        <th>Image</th>
+        <th>Delete</th>
+
+    </thead>
+    <tb>
+
+        {% for receipt in receipts %}
+        <tr>
+            <td>{{loop.index}}</td>
+            <td>{{receipt.name}}</td>
+            <td>{{receipt.totalPrice}}</td>
+            <td>{{receipt.merchant}}</td>
+            <td>{{receipt.category.name}}</td>
+            <td>{{receipt.dateOfPurchase}}</td>
+            <td>{{receipt.returnDate}}</td>
+            <td>{{receipt.numberOfItems}}</td>
+            <td>{{receipt.merchant}}</td>
+            <td><img src="{{url_for('static', filename ='image/' + receipt.image_1)}}" width ="200" height ="200"></td>
+            Delete
+            </button></td>
+        </tr>
+
+         {% endfor %}
+
+
+    </tb>
+
+
+
+
+
+
+
+{% endblock %}

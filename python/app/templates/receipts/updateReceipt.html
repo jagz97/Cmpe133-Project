@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Receipt Page</title>
+{% extends "base.html" %}
+{% block content %}
+{% include "_messages.html" %}
+<div class="container">
+    <div class = "col-md-2"></div>
+    <div class = "col-md-8">
+        <h2 class="text-center">Receipt Information</h2>
+        {% from "_formhelpers.html" import render_field %}
+        <form action="" method = "post" enctype="multipart/form-data">
+            {{render_field(form.name, class ="form-control" , placeholder="Update Receipt Title")}}
+            {{render_field(form.dateOfPurchase, class ="form-control" , placeholder="Add date of Purchase (Optional)")}}
+            {{render_field(form.merchant, class ="form-control" , placeholder="Update Merchant (Optional)")}}
+            {{render_field(form.returnDate, class ="form-control" , placeholder="Update return Date (Optional)")}}
+            {{render_field(form.totalPrice, class ="form-control" , placeholder="Update price")}}
+            {{render_field(form.numberOfItems, class ="form-control" , placeholder="Update number of Items (Optional)")}}
+            {{render_field(form.description, class ="form-control" , placeholder="Update Description (Optional)", rows ="10")}}
+
+                        <label for ="category">Categories</label>
+              <select name = "category" id="category" class="form-control" required>
+                    <option value="{{receipt.category_id}}"> {{receipt.category.name}}</option>
+                    {% for category in categories %}
+                <option value ="category.id"> {{category.name}}</option>
+                    {% endfor %}
+                </select>
+
+            <div class="col-md-8"></div>
+            <div class="col-md-4">{{ render_field(form.image_1) }}</div>
+
+
+
+        <button type = "submit" class="btn btn-outline-info mt-4"> Add Receipt!</button>
+        </form>
+    </div>
+    <div class = "col-md-2"></div>
+
+
+
+{% endblock %}

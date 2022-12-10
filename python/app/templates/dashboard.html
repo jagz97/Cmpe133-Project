@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Merchant Name</th>
+        <th scope="col">Date</th>
+        <th scope="col">Category</th>
+        <th scope="col">Category Type</th>
+        
+        <th scope="col">Amount</th>
+      </tr>
+    </thead>
+    {% for d in data %}
+    <tbody>
+
+        
+      <tr>
+        <td>{{d.merchant_name}}</td>
+        
+        <td>{{d.date}}</td>
+        
+        <td>{{d.category[0]}}</td>
+        <td>{{d.category[1]}}</td>
+        <td>${{ d.amount }}</td>
+    
+        
+        
+        
+      </tr>
+    </tbody>
+    {% endfor %}
+  </table>
+
+
+
+
+

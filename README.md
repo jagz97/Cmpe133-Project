@@ -1,36 +1,22 @@
 # Cmpe133-Project
 
-## Setup
-- Prerequisites: Python 3
-    Python installation: [https://www.python.org/downloads/](https://www.python.org/downloads/)
-
-To run this project, install it locally using terminal
-
-### Using virtual Environment is Recommended:
-On terminal after sucessfully cloning the repository navigate to the project directory:
-- Make virtual environment using python3:
-
-```linux
-$ python3 -m venv venv
-```  
-    
-
-- Activate the virtual environment:
-```linux
-$ . venv/bin/activate
+start the react server for plaid api services:
 ```
-
-- Install all the required dependencies:
-
+cd frontend
+rm -rf node_modules
+rm -rf package-lock.json
+npm install react-scripts
+npm install
+npm run start
 ```
-$ pip install -r requirements.txt
+start the main server by creating virtual evn:
 ```
-    
-
-### How to Run Backend Server
-- Navigate to the project directory. 
-- Type this command into your terminal:
-``` 
-$ python3 run.py
+cd python
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+pip install flask_mail
+pip install flask_uploads
+pip install -U Werkzeug==0.16.0
+python3 run.py
 ```
-- Once the app starts running, it can be accessed from the local host which is available at url for local host http://127.0.0.1:5000/

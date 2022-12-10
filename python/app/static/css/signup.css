@@ -1,0 +1,242 @@
+.signup-container {
+  min-height: 100vh;
+}
+.signup-signup {
+  width: 100%;
+  height: 1024px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 1);
+}
+.signup-rectangle30 {
+  top: 146px;
+  left: 58px;
+  width: 1324px;
+  height: 968px;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 0.550000011920929);
+  border-radius: 55px;
+}
+.signup-rectangle1 {
+  top: 0px;
+  left: 0px;
+  width: 1440px;
+  height: 1024px;
+  position: absolute;
+}
+.signup-text {
+  top: 47px;
+  left: 215px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  align-self: auto;
+  font-style: Extra Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+
+.login-logon-button {
+  top: 700px;
+  left: 590px;
+  width: 266px;
+  height: 71px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgba(106, 105, 248, 1);
+}
+
+
+
+.login-text06 {
+  top: 17px;
+  left: 60px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  background-color:rgba(106, 105, 248, 1) ;
+  background: transparent;
+}
+.signup-image8 {
+  top: 19px;
+  left: 41px;
+  width: 146px;
+  height: 99px;
+  position: absolute;
+  border-color: transparent;
+}
+.signup-text02 {
+  top: 307px;
+  left: 533px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.signup-text04 {
+  top: 445px;
+  left: 533px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.signup-rectangle3 {
+  top: 343px;
+  left: 533px;
+  width: 374px;
+  height: 61px;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+}
+.signup-rectangle4 {
+  top: 481px;
+  left: 533px;
+  width: 374px;
+  height: 61px;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+}
+.signup-logon-button {
+  top: 715px;
+  left: 587px;
+  width: 266px;
+  height: 71px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgba(106, 105, 248, 1);
+}
+.signup-text06 {
+  top: 16px;
+  left: 80px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.signup-image9 {
+  top: 494px;
+  left: 853px;
+  width: 38px;
+  height: 35px;
+  position: absolute;
+  border-color: transparent;
+}
+.signup-text08 {
+  top: 577px;
+  left: 533px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.signup-rectangle5 {
+  top: 613px;
+  left: 533px;
+  width: 374px;
+  height: 61px;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+}
+.signup-image10 {
+  top: 632px;
+  left: 853px;
+  width: 38px;
+  height: 35px;
+  position: absolute;
+  border-color: transparent;
+}
