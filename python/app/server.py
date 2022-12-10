@@ -225,7 +225,7 @@ def addreceipt():
                                 totalPrice=totalPrice,numberOfItems=numberOfItems,description=description,
                                 category_id = category, image_1=image_1)
         db.session.add(uploadreceipt)
-        flash(f'Your receipt has been added!', 'success')
+        
         db.session.commit()
         return redirect(url_for('addreceipt'))
     return render_template('receipts/addReceipt.html',title = "Add Receipt Page", form = form,categories = categories)

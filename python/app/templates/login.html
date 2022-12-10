@@ -1,116 +1,92 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html lang="english">
-  <head>
-    <title>exported project</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
-
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <link rel="stylesheet" href="static/css/style.css" />
-  </head>
-  <body>
-    <div>
-      <link href="static/css/login.css" rel="stylesheet" />
-
-      <div class="login-container">
-
-        <div class="login-login">
-          <img
-            alt="Rectangle292139"
-            src="static/public/playground_assets/rectangle292139-y345-1000h.png"
-            class="login-rectangle29"
-          />
-          <img
-            alt="Rectangle135"
-            src="static/public/playground_assets/rectangle135-bhlu-1100h.png"
-            class="login-rectangle1"
-          />
-          <a class="login-text" href="{{ url_for('index') }}">Receiptify</a>
-          <img
-            alt="image8329"
-            src="static/public/playground_assets/image8329-v1vk-200h.png"
-            class="login-image8"
-          />
-          <span class="login-text02"><span>Email:</span></span>
-          <span class="login-text04"><span>Password:</span></span>
-<form action="" method="POST">
-{{ form.hidden_tag() }}
-            {{ form.username(class="login-rectangle3") }}
-          {{ form.password(class="login-rectangle4") }}
-          <div class="login-logon-button">
-            {{ form.submit(class="login-text06") }}
-            
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+     
+     <section class="vh-100 gradient-custom">
+      <div class="container py-5 h-100">
+        <style>
+         .gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+  }
+          
+        </style>
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card bg-dark text-white" style="border-radius: 1rem;">
+              <div class="card-body p-5 text-center">
+                <form action="" method="POST">
+                <div class="mb-md-5 mt-md-4 pb-5">
+                  {{ form.hidden_tag() }}
+    
+                  <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                  <p class="text-white-50 mb-5">Please enter your login and password!</p>
+    
+                  <div class="form-outline form-white mb-4">
+                    
+                    {{ form.username(class="form-control form-control-lg") }}
+                    <label class="form-label" >Username</label>
+                  </div>
+    
+                  <div class="form-outline form-white mb-4">
+                    
+                    {{ form.password(class="form-control form-control-lg") }}
+                    <label class="form-label" for="typePasswordX">Password</label>
+                  </div>
+    
+                  
+    
+                  
+                  {{ form.submit(class="btn btn-outline-light btn-lg px-5") }}
+                </form>
+                  <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                    <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+                    <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
+                  </div>
+                
+                </div>
+    
+                <div>
+                  <p class="mb-0">Don't have an account? <a href="{{ url_for('signup') }}" class="text-white-50 fw-bold">Sign Up</a>
+                  </p>
+                </div>
+    
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
+       
+
+
+            
+          
+          
+            
+            
+         
 
 
              
 
 
-    </form>
-          <img
-            alt="image9340"
-            src="static/public/playground_assets/image9340-3i9a-200h.png"
-            class="login-image9"
-          />
-          <span class="login-text08"><span>Forgot Password?</span></span>
-
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
-
-
-
-
-
-
-
-
-    </head>
-<!-- Navbar ends here -->
-
-<body>
-
-
-
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="{{ url_for ('static', filename='js/bootstrap.bundle.min.js')}}"></script>
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" ></script>
-    -->
-</body>
-
-</html>
+   
+          </html>

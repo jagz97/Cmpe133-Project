@@ -1,0 +1,750 @@
+/* screen - home */
+
+.home {
+  background-color: #ffffff;
+  border: 1px none;
+  height: 1024px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.home .rectangle-22-C61RwL {
+  --z-index: 0;
+  background-color: #34343499;
+  border-radius: 55px;
+  height: 958px;
+  left: 284px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 113px;
+  width: 1029px;
+}
+
+.home .line-8-stroke-C61RwL {
+  --z-index: 1;
+  background-color: transparent;
+  background-image: url(../img/line-8--stroke-@1x.svg);
+  background-size: 100% 100%;
+  height: 9px;
+  left: 342px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 776px;
+  width: 913px;
+}
+
+.home .line-6-stroke-C61RwL {
+  --z-index: 2;
+  background-color: transparent;
+  background-image: url(../img/line-6--stroke-@1x.svg);
+  background-size: 100% 100%;
+  height: 9px;
+  left: 344px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 356px;
+  width: 913px;
+}
+
+.home .rectangle-1-C61RwL {
+  --z-index: 3;
+  background: linear-gradient(180deg, rgba(22.000000588595867, 22.000000588595867, 24.000000469386578, 0) 0%, rgb(49.00000087916851, 49.00000087916851, 50.000000819563866) 100%);
+  background-color: transparent;
+  height: 1024px;
+  left: 0px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 1440px;
+}
+
+.home .amazon-shelf-dealine-10242022-C61RwL {
+  --z-index: 4;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Inter', Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 347px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 844px;
+  width: auto;
+}
+
+.home .playstation-5-12242022-C61RwL {
+  --z-index: 5;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Inter', Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 349px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 880px;
+  width: auto;
+}
+
+.home .scan-C61RwL {
+  --z-index: 6;
+  background-color: transparent;
+  color: #000000;
+  cursor: pointer;
+  font-family: 'Inter', Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 838px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 51px;
+  width: auto;
+}
+
+.home .reports-C61RwL {
+  --z-index: 7;
+  background-color: transparent;
+  color: #000000;
+  cursor: pointer;
+  font-family: 'Inter', Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 949px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 51px;
+  width: auto;
+}
+
+.home .help-C61RwL {
+  --z-index: 8;
+  background-color: transparent;
+  color: #000000;
+  cursor: pointer;
+  font-family: 'Inter', Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 1088px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 51px;
+  width: auto;
+}
+
+.home .signup-C61RwL {
+  --z-index: 9;
+  background-color: transparent;
+  color: #000000;
+  cursor: pointer;
+  font-family: 'Inter', Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 1192px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 51px;
+  width: auto;
+}
+
+.home .receiptify-C61RwL {
+  --z-index: 10;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Inter', Helvetica;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  height: auto;
+  left: 255px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 47px;
+  width: auto;
+}
+
+.home .line-1-C61RwL {
+  --z-index: 11;
+  background-color: transparent;
+  background-image: url(../img/line-1@1x.svg);
+  background-size: 100% 100%;
+  height: 1024px;
+  left: 228px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.home .place-C61RwL {
+  --z-index: 12;
+  background-color: transparent;
+  color: #6a91f4;
+  font-family: 'Inter', Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 718px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 51px;
+  width: auto;
+}
+
+.home .line-2-stroke-C61RwL {
+  --z-index: 13;
+  background-color: transparent;
+  background-image: url(../img/line-2--stroke-@2x.svg);
+  background-size: 100% 100%;
+  height: 1px;
+  left: 712px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 85px;
+  width: 70px;
+}
+
+.home .search-icon-C61RwL {
+  --z-index: 14;
+  background-color: transparent;
+  height: 24px;
+  left: 1318px;
+  opacity: 1;
+  position: absolute;
+  top: 59px;
+  width: 20px;
+}
+
+.home .rectangle-2-C61RwL {
+  --z-index: 15;
+  background-color: transparent;
+  background-image: url(../img/rectangle-2@2x.png);
+  background-size: 100% 100%;
+  height: 100px;
+  left: 348px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 226px;
+  width: 100px;
+}
+
+.home .image-1-C61RwL {
+  --z-index: 16;
+  background-color: transparent;
+  background-image: url(../img/image-1@2x.png);
+  background-size: 100% 100%;
+  height: 100px;
+  left: 498px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 226px;
+  width: 100px;
+}
+
+.home .image-2-C61RwL {
+  --z-index: 17;
+  background-color: transparent;
+  background-image: url(../img/image-2@2x.png);
+  background-size: 100% 100%;
+  height: 100px;
+  left: 648px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 226px;
+  width: 100px;
+}
+
+.home .image-3-C61RwL {
+  --z-index: 18;
+  background-color: transparent;
+  background-image: url(../img/image-3@2x.png);
+  background-size: 100% 100%;
+  height: 100px;
+  left: 798px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 226px;
+  width: 100px;
+}
+
+.home .image-4-C61RwL {
+  --z-index: 19;
+  background-color: transparent;
+  background-image: url(../img/image-4@2x.png);
+  background-size: 100% 100%;
+  height: 100px;
+  left: 948px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 226px;
+  width: 100px;
+}
+
+.home .image-5-C61RwL {
+  --z-index: 20;
+  background-color: transparent;
+  background-image: url(../img/image-5@2x.png);
+  background-size: 100% 100%;
+  height: 100px;
+  left: 1098px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 226px;
+  width: 99px;
+}
+
+.home .categories-C61RwL {
+  --z-index: 21;
+  background-color: transparent;
+  color: #000000;
+  font-family: 'Inter', Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 348px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 163px;
+  width: auto;
+}
+
+.home .return-deadlines-C61RwL {
+  --z-index: 22;
+  background-color: transparent;
+  color: #000000;
+  font-family: 'Inter', Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 346px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 793px;
+  width: auto;
+}
+
+.home .recent-receipts-C61RwL {
+  --z-index: 23;
+  background-color: transparent;
+  color: #000000;
+  font-family: 'Inter', Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 349px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 370px;
+  width: auto;
+}
+
+.home .image-7-C61RwL {
+  --z-index: 24;
+  background-color: transparent;
+  background-image: url(../img/image-7@2x.png);
+  background-size: 100% 100%;
+  height: 303px;
+  left: 598px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 422px;
+  width: 227px;
+}
+
+.home .image-6-C61RwL {
+  --z-index: 25;
+  background-color: transparent;
+  background-image: url(../img/image-6@2x.png);
+  background-size: 100% 100%;
+  height: 315px;
+  left: 349px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 422px;
+  width: 197px;
+}
+
+.home .image-8-C61RwL {
+  --z-index: 26;
+  background-color: transparent;
+  background-image: url(../img/image-8@2x.png);
+  background-size: 100% 100%;
+  height: 99px;
+  left: 41px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 19px;
+  width: 146px;
+}
+
+.home .see-all-btn-C61RwL {
+  --z-index: 27;
+  background-color: transparent;
+  background-image: url(../img/see-all-btn@1x.png);
+  background-size: 100% 100%;
+  height: 60px;
+  left: 1226px;
+  opacity: 1;
+  position: absolute;
+  top: 243px;
+  width: 60px;
+}
+
+.home .see-all-btn-VMr6Om {
+  --z-index: 28;
+  background-color: transparent;
+  background-image: url(../img/see-all-btn@1x.png);
+  background-size: 100% 100%;
+  height: 60px;
+  left: 857px;
+  opacity: 1;
+  position: absolute;
+  top: 537px;
+  width: 60px;
+}
+/* screen - signup */
+
+.signup {
+  background-color: #ffffff;
+  border: 1px none;
+  height: 1024px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.signup .rectangle-30-C61RwL {
+  --z-index: 0;
+  background-color: transparent;
+  background-image: url(../img/rectangle-30@1x.png);
+  background-size: 100% 100%;
+  height: 878px;
+  left: 58px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 146px;
+  width: 1324px;
+}
+
+.signup .rectangle-1-C61RwL {
+  --z-index: 1;
+  background-color: transparent;
+  background-image: url(../img/rectangle-1@1x.svg);
+  background-size: 100% 100%;
+  height: 1024px;
+  left: 0px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 1440px;
+}
+
+.signup .receiptify-C61RwL {
+  --z-index: 2;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Inter', Helvetica;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  height: auto;
+  left: 215px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 46px;
+  width: auto;
+}
+
+.signup .image-8-C61RwL {
+  --z-index: 3;
+  background-color: transparent;
+  background-image: url(../img/image-8@2x.png);
+  background-size: 100% 100%;
+  height: 99px;
+  left: 41px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 19px;
+  width: 146px;
+}
+
+.signup .email-C61RwL {
+  --z-index: 4;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Inter', Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 533px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 306px;
+  width: auto;
+}
+
+.signup .password-C61RwL {
+  --z-index: 5;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Inter', Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 533px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 444px;
+  width: auto;
+}
+
+.signup .rectangle-3-C61RwL {
+  --z-index: 6;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 5px;
+  height: 61px;
+  left: 533px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 343px;
+  width: 374px;
+}
+
+.signup .rectangle-4-C61RwL {
+  --z-index: 7;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 5px;
+  height: 61px;
+  left: 533px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 481px;
+  width: 374px;
+}
+
+.signup .logon-button-C61RwL {
+  --z-index: 8;
+  background-color: transparent;
+  cursor: pointer;
+  height: 71px;
+  left: 587px;
+  opacity: 1;
+  position: absolute;
+  top: 715px;
+  width: 268px;
+}
+
+.signup .rectangle-5-4F85jG {
+  --z-index: 0;
+  background-color: #6a69f8;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 20px;
+  height: 71px;
+  left: 0px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 266px;
+}
+
+.signup .signup-4F85jG {
+  --z-index: 1;
+  background-color: transparent;
+  color: #000000;
+  font-family: 'Inter', Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 80px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 16px;
+  width: auto;
+}
+
+.signup .image-9-C61RwL {
+  --z-index: 9;
+  background-color: transparent;
+  background-image: url(../img/image-9@2x.png);
+  background-size: 100% 100%;
+  height: 35px;
+  left: 853px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 494px;
+  width: 38px;
+}
+
+.signup .re-enter-password-C61RwL {
+  --z-index: 10;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Inter', Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 533px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 576px;
+  width: auto;
+}
+
+.signup .rectangle-5-C61RwL {
+  --z-index: 11;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 5px;
+  height: 61px;
+  left: 533px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 613px;
+  width: 374px;
+}
+
+.signup .image-10-C61RwL {
+  --z-index: 12;
+  background-color: transparent;
+  background-image: url(../img/image-9@2x.png);
+  background-size: 100% 100%;
+  height: 35px;
+  left: 853px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 632px;
+  width: 38px;
+}
