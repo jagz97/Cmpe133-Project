@@ -15,6 +15,7 @@ cd python
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+pip install flask_mail
 pip install -U Werkzeug==0.16.0
 pip install flask_uploads
 python3 run.py
