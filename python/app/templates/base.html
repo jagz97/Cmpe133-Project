@@ -95,8 +95,8 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li  class="nav-item">
-                            <a class="nav-link {% if title=='Home' %}active{% endif %}" href="{{ url_for('index') }} " >
-                                Home
+                            <a class="nav-item " href="{{ url_for('index') }} " >
+                                HomePage
                                 <!--<span class="sr-only">(current)</span>-->
                             </a>
                         </li>
@@ -105,7 +105,7 @@
 
                         <li class="nav-item">
                             {% if current_user.is_anonymous %}
-            <a class="nav-link {% if title=='Home' %}active{% endif %}" href="{{ url_for('login') }}">
+            <a class="nav-item " href="{{ url_for('login') }}">
                Login to link account
                 <!--<span class="sr-only">(current)</span>-->
             </a>
@@ -126,9 +126,9 @@
 
 
                         <li class="nav-item">
-                            <a class="nav-link {% if title=='Home' %}active{% endif %}" href="{{ url_for('get_transactions') }}">
+                            <a class="nav-item " href="{{ url_for('get_transactions') }}">
                                 Dashboard
-                                <!--<span class="sr-only">(current)</span>-->
+                                
                             </a>
                         </li>
                         <li class="nav-item">
