@@ -190,7 +190,7 @@ def updateCategory(id):
         updateCategory.name = category
         flash(f'The category has been updated!','success')
         db.session.commit()
-        return redirect(url_for('updateCategory/<int:id>'))
+        return redirect(url_for('library'))
     return render_template('receipts/updateCategory.html', title = 'Update Category page', updateCategory = updateCategory)
 
 @app.route('/deleteCategory/<int:id>', methods =['POST'])
