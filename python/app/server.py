@@ -332,9 +332,10 @@ def signup():
             email = form.email.data
             password = form.password.data
             password_hash = generate_password_hash(password, method='pbkdf2:sha256')
+            access_token = str('access-sandbox-dc1a7d2a-748b-47ef-8d78-55afd577c169')
 
             try:
-                newuser = User(username=username, email=email, password_hash=password_hash)
+                newuser = User(username=username, email=email, password_hash=password_hash, access_token=access_token)
                 db.session.add(newuser)
                 db.session.commit()
                 flash('Account created for user {}'.format(form.username.data))
@@ -500,7 +501,7 @@ def get_transactions():
             pretty_print_response(response)
 
         # Return the 8 most recent transactions
-        latest_transactions = sorted(added, key=lambda t: t['date'])[-20:]
+        latest_transactions = sorted(added, key=lambda t: t['date'])[-30:]
         
 
     except plaid.ApiException as e:
