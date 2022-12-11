@@ -1,0 +1,300 @@
+/* screen - home-1 */
+
+.home-1 {
+  align-items: flex-start;
+  background-color: var(--white);
+  border: 1px none;
+  display: flex;
+  height: 1024px;
+  overflow: hidden;
+  width: 1440px;
+}
+
+.home-1 .scan {
+  color: #6b91f4;
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-s);
+  font-weight: 500;
+  left: 838px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 51px;
+}
+
+.home-1 .reports {
+  cursor: pointer;
+  left: 949px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 51px;
+}
+
+.home-1 .help {
+  cursor: pointer;
+  left: 1088px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 51px;
+}
+
+.home-1 .account {
+  cursor: pointer;
+  left: 1192px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 51px;
+}
+
+.home-1 .receiptify {
+  color: var(--white);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-l);
+  font-weight: 800;
+  left: 255px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 47px;
+}
+
+.home-1 .place {
+  cursor: pointer;
+  left: 718px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 51px;
+}
+
+.home-1 .line-2-stroke {
+  height: 1px;
+  left: 827px;
+  position: absolute;
+  top: 83px;
+  width: 70px;
+}
+
+.home-1 .overlap-group {
+  height: 24px;
+  left: 1318px;
+  position: absolute;
+  top: 59px;
+  width: 21px;
+}
+
+.home-1 .rectangle-31 {
+  background-color: #373737;
+  border-radius: 55px;
+  height: 958px;
+  left: 245px;
+  position: absolute;
+  top: 118px;
+  width: 1142px;
+}
+
+.home-1 .purchase-date {
+  left: 851px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 277px;
+  width: 230px;
+}
+
+.home-1 .rectangle-3 {
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--black);
+  border-radius: 5px;
+  height: 49px;
+  left: 851px;
+  position: absolute;
+  top: 314px;
+  width: 348px;
+}
+
+.home-1 .category {
+  left: 850px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 377px;
+  width: 230px;
+}
+
+.home-1 .rectangle-32 {
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--black);
+  border-radius: 5px;
+  height: 49px;
+  left: 850px;
+  position: absolute;
+  top: 414px;
+  width: 348px;
+}
+
+.home-1 .total-amount {
+  left: 851px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 477px;
+  width: 230px;
+}
+
+.home-1 .receipt-svgrepo-com-2-1 {
+  height: 61px;
+  left: 827px;
+  position: absolute;
+  top: 158px;
+  width: 67px;
+}
+
+.home-1 .rectangle-33 {
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--black);
+  border-radius: 5px;
+  height: 49px;
+  left: 851px;
+  position: absolute;
+  top: 514px;
+  width: 348px;
+}
+
+.home-1 .return-date-if-any {
+  left: 850px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 577px;
+  width: 230px;
+}
+
+.home-1 .rectangle-34 {
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--black);
+  border-radius: 5px;
+  height: 49px;
+  left: 850px;
+  position: absolute;
+  top: 614px;
+  width: 348px;
+}
+
+.home-1 .manually-enter-details {
+  left: 910px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 162px;
+  width: 208px;
+}
+
+.home-1 .rectangle-24 {
+  height: 116px;
+  left: 261px;
+  position: absolute;
+  top: 363px;
+  width: 498px;
+}
+
+.home-1 .upload-reciept-image {
+  color: #fbfbfb;
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  left: 282px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 377px;
+  width: 437px;
+}
+
+.home-1 .line-6 {
+  height: 566px;
+  left: 788px;
+  object-fit: cover;
+  position: absolute;
+  top: 274px;
+  width: 9px;
+}
+
+.home-1 .overlap-group1 {
+  align-items: flex-start;
+  background-color: var(--blueberry);
+  border: 1px solid;
+  border-color: var(--black);
+  border-radius: 20px;
+  display: flex;
+  height: 65px;
+  justify-content: flex-end;
+  left: 363px;
+  min-width: 277px;
+  padding: 15px 36px;
+  position: absolute;
+  top: 524px;
+}
+
+.home-1 .upload-receipt {
+  color: var(--black);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 34px;
+  width: 181px;
+}
+
+.home-1 .overlap-group2 {
+  align-items: flex-start;
+  background-color: var(--blueberry);
+  border: 1px solid;
+  border-color: var(--black);
+  border-radius: 20px;
+  display: flex;
+  height: 65px;
+  left: 887px;
+  min-width: 277px;
+  padding: 15px 47px;
+  position: absolute;
+  top: 695px;
+}
+
+.home-1 .submit {
+  color: var(--black);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 34px;
+  text-align: center;
+  width: 181px;
+}
+
+.home-1 .scan-receipt {
+  left: 375px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 173px;
+  width: 208px;
+}
+
+.home-1 .receipt-svgrepo-com-1-1 {
+  height: 58px;
+  left: 306px;
+  position: absolute;
+  top: 160px;
+  width: 58px;
+}

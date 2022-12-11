@@ -46,51 +46,6 @@
   margin-bottom: 0;
   text-decoration: none;
 }
-
-
-.login-logon-button {
-  top: 700px;
-  left: 590px;
-  width: 266px;
-  height: 71px;
-  display: flex;
-  padding: 0;
-  position: absolute;
-  align-self: auto;
-  box-sizing: border-box;
-  align-items: flex-start;
-  flex-shrink: 1;
-  border-color: transparent;
-  border-style: none;
-  border-width: 0;
-  margin-right: 0;
-  border-radius: 0px 0px 0px 0px;
-  margin-bottom: 0;
-  flex-direction: row;
-  justify-content: flex-start;
-  background-color: rgba(106, 105, 248, 1);
-}
-
-
-
-.login-text06 {
-  top: 17px;
-  left: 60px;
-  color: rgba(0, 0, 0, 1);
-  height: auto;
-  position: absolute;
-  font-size: 20px;
-  align-self: auto;
-  font-style: Medium;
-  text-align: left;
-  font-family: Inter;
-  font-weight: 500;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-  background-color:rgba(106, 105, 248, 1) ;
-  background: transparent;
-}
 .signup-image8 {
   top: 19px;
   left: 41px;

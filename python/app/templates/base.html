@@ -9,14 +9,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
+    
+    <meta name ="viewport" content ="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src ="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ <!-- Favicons -->
+ <link href="assets/img/favicon.png" rel="icon">
+ <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+ <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <title>{{ title }} - Receiptify</title>
 
-    <style data-tag="reset-style-sheet">
-        html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-      </style>
-      <style data-tag="default-style-sheet">
+   
+      <style >
+
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+  }
         html {
           font-family: Inter;
           font-size: 16px;
@@ -32,7 +52,10 @@
           color: var(--dl-color-gray-black);
           background-color: var(--dl-color-gray-white);
   
+
+          
         }
+        
       </style>
   
     <title>{{ title }} - Recetify</title>
@@ -52,63 +75,17 @@
 </head>
 
 <body>
-    {% if current_user.is_anonymous %}
-
-    <div>
-        <link href="static/css/home-logged-in.css" rel="stylesheet" />
-  
-        <div class="home-logged-in-container">
-          <div class="home-logged-in-home-logged-in">
-            
-                
-            <img
-              src="static/public/playground_assets/rectangle212138-nzrw-1000h.png"
-              alt="Rectangle212138"
-              class="home-logged-in-rectangle21"
-            />
-            
-            <img
-              src="static/public/playground_assets/rectangle1743-tz3c-1100h.png"
-              alt="Rectangle1743"
-              class="home-logged-in-rectangle1"
-            />
-            <a class="home-logged-in-text04" href="{{ url_for('index') }}">Receiptify</a>
-            
-            
-            <h1 style="margin-left: 400px; margin-top: 200px;">Welcome to recitfy!!!
-            
-            
-        </h1>
-        
-            
-            </div>
-           
-            
-            
-            <img
-              src="static/public/playground_assets/image8767-9lz0i-200h.png"
-              alt="image8767"
-              class="home-logged-in-image8"
-            />
-            
-            
-            <a class="home-logged-in-text12" href="{{ url_for('login') }}">Login</a>
-            <a class="home-logged-in-text14" href="{{ url_for('signup') }}">SignUp</a>
-            
-            <a class="home-logged-in-text18" href="{{ url_for('index') }}">Home</a>
-            
-           
-            
-          </div>
-        </div>
-      </div>
-
+    
+ 
+   <div class="gradient-custom" style="height: 800px;">
 
 
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
         <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/">Receiptify</a>
         <p class="align-middle h5 pl-4 text-white">Welcome, {{ current_user.username }}!</p>
-        <ul class="navbar-nav px-3">
+        {% if current_user.is_anonymous %}
+        <ul class="navbar-nav px-7">
+         
             <li class="nav-item text-nowrap">
                 
                 <a class="nav-link" href="{{ url_for('login') }}">Login</a>
@@ -117,261 +94,27 @@
                 
             </li>
         </ul>
-    </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-                <div class="sidebar-sticky">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link {% if title=='Home' %}active{% endif %}" href="{{ url_for('index') }}">
-                                Home
-                                <!--<span class="sr-only">(current)</span>-->
-                            </a>
-                        </li>
+        {% else %}
 
 
+        <ul class="navbar-nav px-3">
+         
+          <li class="nav-item text-nowrap">
+              
+              <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+              
+              
+              
+          </li>
+      </ul>
 
-                        <li class="nav-item">
-                            {% if current_user.is_anonymous %}
-            <a class="nav-link {% if title=='Home' %}active{% endif %}" href="{{ url_for('login') }}">
-               Login to link account
-                <!--<span class="sr-only">(current)</span>-->
-            </a>
-            {% else %}
-                        </li>
-
-
-
-
-                        <li class="nav-item">
-                            <a href="http://localhost:3000/">Link Account</a>
-                            
-                        </li>
-
-
-
-
-
-
-                        <li class="nav-item">
-                            <a class="nav-link {% if title=='Home' %}active{% endif %}" href="{{ url_for('get_transactions') }}">
-                                Dashboard
-                                <!--<span class="sr-only">(current)</span>-->
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="" href="{{ url_for('get_balance') }}">
-                                Profile
-                                <!--<span class="sr-only">(current)</span>-->
-                            </a>
-                        </li>
-
-
-
-
-
-
-
-
-
-                         <li class="nav-item">
-                            <a href="/addReceipt">Upload Receipts</a>
-
-                        </li>
-
-
-
-
-                         <li class="nav-item">
-                            <a href="/library">Library</a>
-                        </li>
-
-
-
-
-                        <li class="nav-item">
-                            <a href="/addCategory">Add a category!</a>
-                        </li>
-
-
-                        <li class="nav-item">
-                            <a href="/updateCategory">Update a category!</a>
-                        </li>
-
-
-
-                    </ul>
-
-
-
-
-
-
-
-
-                    {% endif %}
-                </div>
-            </nav>
-
-            
-          
-            
-        </div>
-
-    </div>
-
-
-    {% else %}
-    
-    <div>
-       
-        <link href="static/css/home-logged-in.css" rel="stylesheet" />
-        
-        <div class="home-logged-in-container">
-           
-          <div class="home-logged-in-home-logged-in">
-            
-            
-            <img
-              src="static/public/playground_assets/rectangle212138-nzrw-1000h.png"
-              alt="Rectangle212138"
-              class="home-logged-in-rectangle21"
-            />
-            <img
-              src="static/public/playground_assets/line88019-nqxf.svg"
-              alt="Line88019"
-              class="home-logged-in-line8"
-            />
-            <img
-              src="static/public/playground_assets/line98019-e2ei.svg"
-              alt="Line98019"
-              class="home-logged-in-line9"
-            />
-            <img
-              src="static/public/playground_assets/rectangle1743-tz3c-1100h.png"
-              alt="Rectangle1743"
-              class="home-logged-in-rectangle1"
-            />
-            <span class="home-logged-in-text">
-              <span>Amazon Shelf Dealine: 10/24/2022</span>
-            </span>
-            <span class="home-logged-in-text02">
-              <span>Playstation 5: 12/24/2022</span>
-            </span>
-            <span class="home-logged-in-text04"><span>Receiptify</span></span>
-            <img
-              src="static/public/playground_assets/line1750-exk.svg"
-              alt="Line1750"
-              class="home-logged-in-line1"
-            />
-            <div class="home-logged-in-search-icon">
-              <img
-                src="static/public/playground_assets/ellipse1754-vejh-200h.png"
-                alt="Ellipse1754"
-                class="home-logged-in-ellipse1"
-              />
-              <img
-                src="static/public/playground_assets/line3755-duyj.svg"
-                alt="Line3755"
-                class="home-logged-in-line3"
-              />
-            </div>
-            <img
-              src="static/public/playground_assets/rectangle2756-j5mh-200h.png"
-              alt="Rectangle2756"
-              class="home-logged-in-rectangle2"
-            />
-            <img
-              src="static/public/playground_assets/image1757-2yt-200h.png"
-              alt="image1757"
-              class="home-logged-in-image1"
-            />
-            <img
-              src="static/public/playground_assets/image2758-kwy-200h.png"
-              alt="image2758"
-              class="home-logged-in-image2"
-            />
-            <img
-              src="static/public/playground_assets/image3759-5dll-200h.png"
-              alt="image3759"
-              class="home-logged-in-image3"
-            />
-            <img
-              src="static/public/playground_assets/image4760-75c-200h.png"
-              alt="image4760"
-              class="home-logged-in-image4"
-            />
-            <img
-              src="static/public/playground_assets/image5761-9t8g-200w.png"
-              alt="image5761"
-              class="home-logged-in-image5"
-            />
-            <span class="home-logged-in-text06"><span>Categories</span></span>
-            <span class="home-logged-in-text08">
-              <span>Return Deadlines</span>
-            </span>
-            <span class="home-logged-in-text10">
-              <span>Recent Receipts</span>
-            </span>
-            <img
-              src="static/public/playground_assets/image7765-n1dwk-300w.png"
-              alt="image7765"
-              class="home-logged-in-image7"
-            />
-            <img
-              src="static/public/playground_assets/image6766-rcr-400h.png"
-              alt="image6766"
-              class="home-logged-in-image6"
-            />
-            <img
-              src="static/public/playground_assets/image8767-9lz0i-200h.png"
-              alt="image8767"
-              class="home-logged-in-image8"
-            />
-            <div class="home-logged-in-see-all-btn">
-              <img
-                src="static/public/playground_assets/ellipse2769-s8hk-200h.png"
-                alt="Ellipse2769"
-                class="home-logged-in-ellipse2"
-              />
-              <img
-                src="static/public/playground_assets/arrowright770-j5jb.svg"
-                alt="ArrowRight770"
-                class="home-logged-in-arrow-right"
-              />
-            </div>
-            <div class="home-logged-in-see-all-btn1">
-              <img
-                src="static/public/playground_assets/ellipse2772-ory-200h.png"
-                alt="Ellipse2772"
-                class="home-logged-in-ellipse21"
-              />
-              <img
-                src="static/public/playground_assets/arrowright773-mpk6.svg"
-                alt="ArrowRight773"
-                class="home-logged-in-arrow-right1"
-              />
-            </div>
-           
-            <span class="home-logged-in-text12"><span>Scan</span></span>
-            
-            <a class="home-logged-in-text14" href="{{ url_for('get_transactions') }}">Bank Transactions</a>
-           
-            <a class="home-logged-in-text18" href="{{ url_for('index') }}">Home</a>
-            
-           
-            <a class="home-logged-in-text16" href="{{ url_for('get_accounts') }}">
-              Profile
-           
-          </a>
-          <a class="home-logged-in-text20" href="{{ url_for('logout') }}">Logout</a>
-          </div>
-        </div>
-      </div>
-  
       {% endif %}
 
+    </nav>
+   
+
+
+    
 
 
 
@@ -380,10 +123,149 @@
 
 
 
+    <div class="row">
+        <div class="col-3">
+        <nav class ="navbar bg-dark">
+        <ul class ="nav navbar-nav">
+        <li  class="nav-item">
+            <a class="nav-item " href="{{ url_for('index') }} " >
+                HomePage
+                <!--<span class="sr-only">(current)</span>-->
+            </a>
+        </li>
+<br>
+
+
+        <li class="nav-item">
+            {% if current_user.is_anonymous %}
+<a class="nav-item " href="{{ url_for('login') }}">
+Login to link account
+<!--<span class="sr-only">(current)</span>-->
+</a>
+
+<div style="height: 800px;"  class="row"></div>
+{% else %}
+        </li>
+
+
+        <br>
+
+        <li class="nav-item">
+            <a href="http://localhost:3000/">Link Account</a>
+            
+        </li>
+
+        <br>
 
 
 
 
+        <li class="nav-item">
+            <a class="nav-item " href="{{ url_for('get_transactions') }}">
+                Dashboard
+                
+            </a>
+        </li>
+        <br>
+        <li class="nav-item">
+            <a class="" href="{{ url_for('get_accounts') }}">
+                Profile
+                <!--<span class="sr-only">(current)</span>-->
+            </a>
+        </li>
+        <br>
+
+
+
+
+
+
+
+
+         <li class="nav-item">
+            <a href="/addReceipt">Upload Receipts</a>
+
+        </li>
+
+        <br>
+
+
+         <li class="nav-item">
+            <a href="/library">Library</a>
+        </li>
+
+        <br>
+
+
+        <li class="nav-item">
+            <a href="/addCategory">Add a category!</a>
+        </li>
+
+        <br>
+        <li class="nav-item">
+            <a href="/updateCategory">Update a category!</a>
+        </li>
+
+
+
+    </ul>
+
+    
+
+
+
+
+
+
+    {% endif %}
+        </ul>
+        <div style="height: 750px;"  class="row"></div>
+        </nav>
+        
+        </div>
+
+
+        <div style="font-family: Arial, Helvetica, sans-serif;" class="col-9">
+            <style>
+                .gradient-custom {
+         /* fallback for old browsers */
+         background: #6a11cb;
+         
+         /* Chrome 10-25, Safari 5.1-6 */
+         background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+         
+         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+         background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+         }
+                 
+               </style>
+                {% if current_user.is_anonymous %}
+            <div class="container">
+            
+            </div>
+            <div class ="container">
+            <h3 style="font-family: Arial, Helvetica, sans-serif; color: aliceblue; text-align: center; margin-top: 200px;">Welcome to Receiptify!!!
+          
+                <br>
+                <br>
+
+        Login/Signup To Get Started 
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary">
+            <a style="color: rgb(88, 229, 232);" class="nav-link" href="{{ url_for('login') }}">Login</a>
+            
+        </button><span></span>
+        <button type="button" class="btn btn-dark">
+            <a class="nav-link" href="{{ url_for('signup') }}">SignUp</a></button>
+    </h3>
+            </div>
+            </div>
+
+            {%endif%}
+            </div>
+
+        </div>
 
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
 

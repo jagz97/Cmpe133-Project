@@ -1,0 +1,229 @@
+/* screen - yearly-reports */
+
+.yearly-reports {
+  align-items: flex-start;
+  background-color: var(--white);
+  border: 1px none;
+  display: flex;
+  height: 1024px;
+  overflow: hidden;
+  width: 1440px;
+}
+
+.yearly-reports .rectangle-28 {
+  background-color: #d9d9d9;
+  border-radius: 55px;
+  height: 958px;
+  left: 260px;
+  position: absolute;
+  top: 118px;
+  width: 1142px;
+}
+
+.yearly-reports .scan {
+  left: 853px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 58px;
+}
+
+.yearly-reports .reports {
+  color: #6b91f4;
+  cursor: pointer;
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-s);
+  font-weight: 500;
+  left: 964px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 58px;
+}
+
+.yearly-reports .help {
+  cursor: pointer;
+  left: 1103px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 58px;
+}
+
+.yearly-reports .receiptify {
+  color: var(--white);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-l);
+  font-weight: 800;
+  left: 255px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 48px;
+}
+
+.yearly-reports .place {
+  left: 727px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 58px;
+}
+
+.yearly-reports .line-2-stroke {
+  height: 1px;
+  left: 967px;
+  position: absolute;
+  top: 93px;
+  width: 70px;
+}
+
+.yearly-reports .overlap-group {
+  height: 24px;
+  left: 1353px;
+  position: absolute;
+  top: 59px;
+  width: 21px;
+}
+
+.yearly-reports .previous-years {
+  color: var(--black);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  left: 312px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 686px;
+}
+
+.yearly-reports .see-all-btn {
+  height: 60px;
+  left: 1201px;
+  position: absolute;
+  top: 394px;
+  width: 60px;
+}
+
+.yearly-reports .see-all-btn-1 {
+  height: 60px;
+  left: 727px;
+  position: absolute;
+  top: 773px;
+  width: 60px;
+}
+
+.yearly-reports .account {
+  cursor: pointer;
+  left: 1210px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 58px;
+}
+
+.yearly-reports .overlap-group1 {
+  align-items: center;
+  background-color: var(--blueberry);
+  border-radius: 5px;
+  display: flex;
+  height: 150px;
+  justify-content: flex-end;
+  left: 518px;
+  min-width: 150px;
+  padding: 0 17px;
+  position: absolute;
+  top: 731px;
+}
+
+.yearly-reports .number {
+  color: var(--black);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 54px;
+  min-width: 114px;
+}
+
+.yearly-reports .overlap-group2 {
+  align-items: center;
+  background-color: var(--blueberry);
+  border-radius: 5px;
+  display: flex;
+  height: 150px;
+  left: 311px;
+  min-width: 150px;
+  padding: 0 19px;
+  position: absolute;
+  top: 731px;
+}
+
+.yearly-reports .number-1 {
+  color: var(--black);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 54px;
+  min-width: 106px;
+}
+
+.yearly-reports .address {
+  color: var(--black);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  left: 312px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 148px;
+}
+
+.yearly-reports .rectangle-31 {
+  background-color: var(--blueberry);
+  height: 484px;
+  left: 847px;
+  position: absolute;
+  top: 203px;
+  width: 324px;
+}
+
+.yearly-reports .total-spent-86412 {
+  left: 860px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 226px;
+  width: 280px;
+}
+
+.yearly-reports .text-1 {
+  color: #17d906;
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-l);
+  font-weight: 400;
+  left: 857px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 534px;
+  width: 299px;
+}
+
+.yearly-reports .less-spending-than-2021 {
+  color: var(--white);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  left: 860px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 578px;
+  width: 289px;
+}
