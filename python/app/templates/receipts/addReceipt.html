@@ -1,5 +1,53 @@
 <!DOCTYPE html>
+<body>
 
+
+   <div class="gradient-custom" style="height: 800px;">
+
+
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/">Receiptify</a>
+        <p class="align-middle h5 pl-4 text-white">Welcome, {{ current_user.username }}!</p>
+        {% if current_user.is_anonymous %}
+        <ul class="navbar-nav px-7">
+
+            <li class="nav-item text-nowrap">
+
+                <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                <a class="nav-link" href="{{ url_for('signup') }}">SignUp</a>
+
+
+            </li>
+        </ul>
+        {% else %}
+
+
+        <ul class="navbar-nav px-3">
+
+          <li class="nav-item text-nowrap">
+
+              <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+
+
+
+          </li>
+      </ul>
+
+    </nav>
+
+
+
+
+    </ul>
+
+
+
+
+
+
+
+
+    {% endif %}
 
 <html lang="en">
 <head>
@@ -49,12 +97,11 @@
               <select name = "category" id="category" class="form-control" required>
                     <option value=""> Select a category</option>
                     {% for category in categories %}
-                <option value ="category.id"> {{category.name}}</option>
+                <option value ="{{category.id}}"> {{category.name}}</option>
                     {% endfor %}
                 </select>
 
             <div class="col-md-8"></div>
-            <div class="col-md-4">{{ render_field(form.image_1) }}</div>
 
 
 

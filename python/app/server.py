@@ -1,5 +1,7 @@
 # source /Users/tnappy/node_projects/quickstart/python/bin/activate
 # Read env vars from .env file
+
+
 from plaid.exceptions import ApiException
 from plaid.model.payment_amount import PaymentAmount
 from plaid.model.payment_amount_currency import PaymentAmountCurrency
@@ -39,7 +41,7 @@ from plaid.model.ach_class import ACHClass
 from plaid.model.transfer_create_idempotency_key import TransferCreateIdempotencyKey
 from plaid.model.transfer_user_address_in_request import TransferUserAddressInRequest
 from plaid.api import plaid_api
-from flask import Flask
+from flask import Flask, send_file
 from flask import render_template, session
 from flask import request
 from flask import jsonify
@@ -65,7 +67,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 
 
 from app import app as app
-from app import db, photos
+from app import db, photos, mail
 from app.forms import  LoginForm, SignUpForm
 
 from .models import User
@@ -194,14 +196,23 @@ def updateCategory(id):
 @app.route('/deleteCategory/<int:id>', methods =['POST'])
 def deleteCategory(id):
     """
-        Allows the user to delete categories already in the database.
-        """
+    Allows the user to delete categories already in the database.
+    """
     category = Category.query.get_or_404(id)
     if request.method == 'POST':
         db.session.delete(category)
         db.session.commit()
         flash(f'The category has been deleted!', ' success')
-        return redirect(url_for('library'))
+        return redirect(url_for('viewCategories'))
+
+@app.route('/categories')
+def viewCategories():
+    """
+    Allows the user to view categories already in the database.
+    """
+    categories = Category.query.order_by(Category.id.desc()).all()
+    return render_template('receipts/categories.html', title = 'Categories', categories = categories)
+
 
 
 @app.route('/addReceipt', methods = ['GET','POST'])
@@ -220,14 +231,13 @@ def addreceipt():
         numberOfItems = form.numberOfItems.data
         description = form.description.data
         category = request.form.get('category')
-        image_1 = photos.save(request.files.get('image_1'))
         uploadreceipt = AddReceipt(name=name,merchant=merchant,dateOfPurchase=dateOfPurchase,returnDate=returnDate,
                                 totalPrice=totalPrice,numberOfItems=numberOfItems,description=description,
-                                category_id = category, image_1=image_1)
+                                category_id = category)
         db.session.add(uploadreceipt)
         
         db.session.commit()
-        return redirect(url_for('addreceipt'))
+        return redirect(url_for('library'))
     return render_template('receipts/addReceipt.html',title = "Add Receipt Page", form = form,categories = categories)
 
 @app.route('/updateReceipt/<int:id>', methods = ('GET','POST'))
@@ -250,7 +260,7 @@ def updateReceipt(id):
         form.description = form.description.data
         db.session.commit()
         flash(f'Receipt updated!','success')
-        return redirect(url_for('updateReceipt/<int:id>'))
+        return redirect(url_for('library'))
     form.name.data = receipt.name
     form.merchant.data = receipt.merchant
     form.dateOfPurchase.data = receipt.dateOfPurchase
@@ -261,7 +271,7 @@ def updateReceipt(id):
 
     form = Addreceipt(request.form)
 
-    return render_template ('receipts/updateCategory.html', form = form, categories = categories, receipt =receipt)
+    return render_template ('receipts/updateReceipt.html', form = form, categories = categories, receipt =receipt)
 
 @app.route('/deleteReceipt/<int:id>', methods = ['POST'])
 def deleteReceipt(id):
@@ -277,7 +287,6 @@ def deleteReceipt(id):
     return redirect(url_for('library'))
 
 
-
 @app.route('/library', methods=['GET','POST'])
 def library():
     """
@@ -290,7 +299,36 @@ def library():
 def support():
     """
     Allows the user to access support for any issues they may have.
+    The user may also request an E-mail to speak with an agent via email
     """
+    if request.method == 'POST':
+        email = request.form.get("email")
+        msg = Message("Support", sender = "receiptify@receiptify.com", recipients = [email] )
+        msg.body = "Hello there," \
+                   "I hope everything is going okay and you're enjoying Receiptify so far, if you have any questions " \
+                   "just let us know by replying to this email!"
+        mail.send(msg)
+        flash(f'Message has been sent!')
+        return redirect(url_for('support'))
+    return render_template('support.html', title = "Support")
+
+
+@app.route('/CSV', methods = ['GET'])
+def CSV():
+    """
+    Allows the user to download receipt information from the database
+    """
+    info = AddReceipt.query.all()
+
+    with open ('test.csv','w', newline='') as csvfile:
+        csvwriter = csv.writer(csvfile, delimiter = ',')
+        csvwriter.writerow(["ID","Name","Merchant","Date of Purchase","Return Date", "Price", "number of Items", "Description", "Category"])
+        for i in info:
+            csvwriter.writerow([i.id, i.name, i.merchant, i.dateOfPurchase , i.returnDate , i.totalPrice , i.numberOfItems, i.description])
+
+    return send_file('../test.csv', mimetype='text/csv', attachment_filename='receipts.csv', as_attachment= True)
+
+
 
 
 ########################################################################
@@ -303,7 +341,7 @@ def support():
 def login():
     """
     Manges the login for customer trying to login
-    Checks for the password and retieve the user profile for right user
+    Checks for the password and retrieve the user profile for right user
     """
     if current_user.is_authenticated:
         print(current_user.id)

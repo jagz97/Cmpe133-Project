@@ -26,4 +26,3 @@ class Addreceipt(Form):
     totalPrice = DecimalField('Price')
     numberOfItems = IntegerField('number of Items')
     description = TextAreaField("Description")
-    image_1 = FileField('Receipt Image', validators=[ FileAllowed(['jpg', 'png'])])

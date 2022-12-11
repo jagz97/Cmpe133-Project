@@ -65,40 +65,26 @@
 
 
 
-        
+
 <div class="container">
 
 <table class ="table table-lg">
     <table class="table table-sm table-bordered">
     <thead>
         <th>ID</th>
-        <th>Receipt</th>
-        <th>Price</th>
-        <th>Merchant</th>
         <th>Category</th>
-        <th>Date of Purchase</th>
-        <th>Return Date</th>
-        <th>Number of Items</th>
-        <th>Description</th>
-        <th>Delete</th>
         <th>Edit</th>
+        <th>Delete</th>
 
     </thead>
     <tb>
 
-        {% for receipt in receipts %}
+        {% for category in categories %}
         <tr>
             <td>{{loop.index}}</td>
-            <td>{{receipt.name}}</td>
-            <td>{{receipt.totalPrice}}</td>
-            <td>{{receipt.merchant}}</td>
-            <td>{{receipt.category.name}}</td>
-            <td>{{receipt.dateOfPurchase}}</td>
-            <td>{{receipt.returnDate}}</td>
-            <td>{{receipt.numberOfItems}}</td>
-            <td>{{receipt.description}}</td>
-            <td> <a href="{{url_for('updateReceipt', id=receipt.id)}}" class="btn btn-sm btn-info">Edit </a> </td>
-            <td> <form action="{{url_for('deleteReceipt',id=receipt.id)}}" method="post">
+            <td>{{category.name}}</td>
+            <td> <a href="{{url_for('updateCategory', id=category.id)}}" class="btn btn-sm btn-info">Edit </a> </td>
+            <td> <form action="{{url_for('deleteCategory',id=category.id)}}" method="post">
                   <button type="submit" class="btn btn-danger">Delete</button>
                 </form></td>
         </tr>
@@ -113,9 +99,4 @@
 </head>
 
 </html>
-
-
-
-
-
 
